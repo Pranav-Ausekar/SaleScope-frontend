@@ -5,9 +5,6 @@ import axios from "axios";
 // const API_STATS_URL = "https://salescope-backend.onrender.com/api/statistics";
 const API_STATS_URL = import.meta.env.VITE_API_URL + "/api/statistics";
 
-
-
-
 export default function TransactionStats({ month }) {
     const [stats, setStats] = useState({
         totalSaleAmount: 0,

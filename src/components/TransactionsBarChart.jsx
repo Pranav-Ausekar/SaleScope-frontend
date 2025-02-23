@@ -55,6 +55,7 @@ export default function TransactionsBarChart({ month }) {
         }
     };
 
+
     return (
         <div className="p-4 bg-white rounded-lg shadow">
             <h2 className="text-xl font-bold mb-4 text-center">Bar Chart Stats - {month}</h2>
