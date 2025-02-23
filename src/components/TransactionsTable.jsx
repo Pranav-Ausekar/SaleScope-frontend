@@ -4,8 +4,9 @@ import TransactionStats from "./TransactionStats";
 import TransactionsBarChart from "./TransactionsBarChart";
 
 // const API_BASE_URL = "http://localhost:3000/api/transactions";
-const API_BASE_URL = "https://salescope-backend.onrender.com/api/transactions";
+// const API_BASE_URL = "https://salescope-backend.onrender.com/api/transactions";
 
+const API_BASE_URL = import.meta.env.VITE_API_URL + "/api/transactions";
 
 export default function TransactionsTable() {
     const [transactions, setTransactions] = useState([]);

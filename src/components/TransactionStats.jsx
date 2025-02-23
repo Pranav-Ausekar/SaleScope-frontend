@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // const API_STATS_URL = "http://localhost:3000/api/statistics";
-const API_STATS_URL = "https://salescope-backend.onrender.com/api/statistics";
+// const API_STATS_URL = "https://salescope-backend.onrender.com/api/statistics";
+const API_STATS_URL = import.meta.env.VITE_API_URL + "/api/statistics";
+
+
 
 
 export default function TransactionStats({ month }) {

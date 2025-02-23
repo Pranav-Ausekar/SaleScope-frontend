@@ -3,7 +3,8 @@ import axios from "axios";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 // const API_CHART_URL = "http://localhost:3000/api/transactions";
-const API_CHART_URL = "https://salescope-backend.onrender.com/api/transactions";
+// const API_CHART_URL = "https://salescope-backend.onrender.com/api/transactions";
+const API_CHART_URL = import.meta.env.VITE_API_URL + "/api/barChart";
 
 
 export default function TransactionsBarChart({ month }) {
